@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Krishna Maran
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Krishna Maran, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,73 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Krishna Maran
+- **Location:** Charlotte, North Carolina, USA (looking to relocate to San Francisco Bay Area; open to remote and hybrid in other cities)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | English | Native |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed at NTT Data (on bench since January 2026, actively seeking new role)
+- **LinkedIn headline:** "Data & AI Consultant @ NTT Data"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **MS in Analytics** (Computational Data Analytics) (2024-2025) - Georgia Institute of Technology
+  - Topics: Machine learning, data mining, statistical learning, computational data analysis, ML for trading, applied analytics practicum
+  - GPA: 3.75
+- **BS in Industrial Engineering** (Analytics & Data Science concentration) (2020-2024) - Georgia Institute of Technology
+  - Topics: Regression/forecasting, simulation, optimization, stochastic systems, decision & data analytics, data visualization, databases, HCI
+  - GPA: 3.63, Highest Honor
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Data & AI Consultant** (July 2025 - Present) - **NTT Data** (Remote)
+  - Official title: Digital Technology Analyst. Consults with Microsoft, Amazon, Salesforce, Nvidia
+  - Built FastAPI + LangGraph agent for sensitive data triage (70% reduction)
+  - Built metadata validation pipeline for Power BI governance compliance
+  - Designed Snowflake Cortex search platform across 60,000+ talent records (50% search time reduction)
+  - On bench since January 2026
+- **Data Analyst (Contract)** (June 2024 - June 2025) - **Westhill Global** (Atlanta, GA)
+  - GCS-to-BigQuery pipeline + LookML model (95% reporting time cut)
+  - Neural network model for claim duration forecasting (35% error reduction)
+  - AlloyDB-to-Spanner migration with Vertex AI Agent Builder (40% query speed improvement)
+- **Operations Analyst Intern** (May 2023 - August 2023) - **W.L. Gore and Associates** (Elkton, MD)
+  - Consolidated 8 data sources, boosted factory efficiency by 10%
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python (Pandas, NumPy, Scikit-Learn, FastAPI, Flask), SQL (BigQuery, Snowflake, Spanner), GCP, Looker/LookML, LangGraph, RAG pipelines, XGBoost, neural networks
+- **Secondary:** JavaScript/React/TypeScript, Tableau, Power BI, Azure, Docker, dbt Core, Streamlit, D3.js, Node.js, LangChain.js
+- **Domain:** Data analytics, BI automation, ML modeling, LLM/AI agent development, cloud data engineering, data governance
+- **Software:** GCP (Cloud Functions, GCS, BigQuery, AlloyDB, Spanner), Snowflake Cortex, Vertex AI, Docker, Railway, Git/GitHub, Claude Code
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
-
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- **Hands-On Essentials: Data Warehousing Workshop** - Snowflake
+- **Hands-On Essentials: Collaboration, Marketplace & Cost Estimation Workshop** - Snowflake
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Eagle Scout - Boy Scouts of America
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Builder mentality** - Prefers building and owning things end to end
+- **Full-stack data orientation** - Comfortable spanning analysis, modeling, engineering, and AI
+- **Impact-driven** - Frames work in measurable outcomes
+- **Strengths:** End-to-end project ownership, rapid prototyping, measurable impact delivery
+- **Growth areas:** [TO BE COMPLETED with formal assessment]
+- **Thrives in:** Environments where data is central to product decisions, with room to build and own things
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building AI agents and LLM-powered tools
+- Using AI experience gained from building agents at NTT Data and personal projects
+- Working at a company where you can actually contribute and build (not sit on bench)
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Tech (established companies and startups): Bay Area companies where data/AI is core to the product
+- Sports analytics: Sports teams and sports tech companies (willing to accept lower pay)
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Consulting roles with heavy travel and constantly changing projects
+- Roles with excessive hours typical of travel-heavy consulting
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

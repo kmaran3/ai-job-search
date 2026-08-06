@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Krishna Maran
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -24,18 +23,19 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Krishna Maran - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Krishna}{Maran}
+\address{Charlotte, NC}{}{}
+\phone[mobile]{678-777-1648}
+\email{krishnamaran12@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/krishna-maran}{LinkedIn}, \href{https://github.com/kmaran3}{GitHub}}
 
 \begin{document}
 
@@ -46,7 +46,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Data professional with an MS in Analytics (Computational Data Analytics) and BS in Industrial Engineering from Georgia Tech. Experienced in building production ML models, automated data pipelines, and LLM-powered tools across consulting, insurance, and manufacturing domains. Combines strong statistical foundations with hands-on Python, SQL, GCP, and AI agent development expertise.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +56,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Machine Learning \& AI}: XGBoost, neural networks, gradient boosting, random forest, LangGraph, RAG pipelines, Claude Code, Snowflake Cortex, Vertex AI Agent Builder
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Data Engineering \& Pipelines}: GCS-to-BigQuery pipelines, GCP Cloud Functions, dbt Core, AlloyDB-to-Spanner migration, data warehouse architecture
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Analytics \& BI}: Looker (LookML), Tableau, Power BI, BigQuery, Streamlit, Looker Studio, Microsoft Fabric
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Programming}: Python (Pandas, NumPy, Scikit-Learn, FastAPI, Flask), JavaScript (React), TypeScript, SQL
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Cloud \& DevOps}: Google Cloud Platform, Microsoft Azure, Docker, Railway, Git/GitHub
 
 \end{itemize}
 
@@ -76,32 +76,34 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- NTT Data ---
+\needspace{5\baselineskip}
+\item{\cventry{Jul 2025 - Present}{Data \& AI Consultant}{NTT Data}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Streamlined sensitive data triage by 70\% by building a FastAPI and LangGraph agent with async scan jobs that flagged PII, legal contracts, and other high-risk files for human review
+    \item Eliminated a recurring analyst review cycle by building a metadata validation pipeline that parsed Power BI semantic models and auto-flagged Critical Data Elements for governance compliance
+    \item Reduced recruiter search time by 50\% across 60,000+ talent records by designing and deploying a Snowflake Cortex search platform with an LLM-powered natural language interface
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Westhill Global ---
+\needspace{5\baselineskip}
+\item{\cventry{Jun 2024 - Jun 2025}{Data Analyst (Contract)}{Westhill Global}{Atlanta, GA}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Cut weekly reporting time by 95\% by building a GCS-to-BigQuery pipeline in Python and unified LookML model that automated coupon program reporting
+    \item Reduced claim duration forecasting error by 35\% by developing a neural network model trained on 20,000+ insurance repair assignments
+    \item Accelerated an AlloyDB to Spanner migration by deploying Cloud Function data pipelines and integrating a Vertex AI Agent Builder, improving search speed by 40\% for 500+ users
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- W.L. Gore ---
+\needspace{5\baselineskip}
+\item{\cventry{May 2023 - Aug 2023}{Operations Analyst Intern}{W.L. Gore and Associates}{Elkton, MD}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Slashed data access time by 87\% by consolidating 8 disparate data sources into a unified analytics database
+    \item Boosted factory efficiency by 10\% by analyzing factory machines, product test data, and customer feedback, pinpointing 3 faulty workflows
 \end{itemize}}}
 
 \end{itemize}
@@ -114,46 +116,27 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{Aug 2024 - May 2025}{MS in Analytics (Computational Data Analytics)}{Georgia Institute of Technology}{Atlanta, GA}{}{\vspace{1pt}
+Machine learning, data mining, statistical learning, computational data analysis, ML for trading. GPA: 3.75
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{Aug 2020 - May 2024}{BS in Industrial Engineering (Analytics \& Data Science)}{Georgia Institute of Technology}{Atlanta, GA}{}{\vspace{1pt}
+Regression/forecasting, simulation, optimization, data visualization. GPA: 3.63, Highest Honor
 }}
 
 \end{itemize}
 
 % ============================================================
-%     LANGUAGES
-% ============================================================
-
-\section{Languages}
-\vspace{1pt}
-\begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{Highest Honor} -- Georgia Institute of Technology, BS in Industrial Engineering (2024).}
+\item{\textbf{Eagle Scout} -- Boy Scouts of America.}
 \end{itemize}
 
 % ============================================================

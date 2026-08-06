@@ -4,8 +4,6 @@ framework_version: 1.2.2
 
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
-
 ## Eligibility Gate — run before scoring
 
 If the candidate is not a citizen or permanent resident of the country they are applying in, run this first. It is a hard filter, not a scoring dimension, and it is separate from work-permit *timing*: timing asks "can they work the required hours yet?", eligibility asks "are they permitted to hold this job at all?". A candidate can pass timing and still be categorically excluded.
@@ -60,9 +58,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python, SQL, BigQuery, GCP (Cloud Functions, GCS, AlloyDB, Spanner), Looker/LookML, data pipelines, ML (XGBoost, neural networks, gradient boosting, random forest), LLM/RAG applications, LangGraph, FastAPI, Flask, dbt, Snowflake Cortex, Vertex AI, data warehousing, statistical modeling, regression/forecasting
+**Moderate match areas:** Tableau, Power BI, Azure, Docker, JavaScript/React/TypeScript, Snowflake, Streamlit, D3.js, Node.js, LangChain.js, Pinecone, ChromaDB
+**Weak match areas:** Spark/distributed computing, Kubernetes, Terraform/IaC, deep learning frameworks at scale (PyTorch/TensorFlow), Airflow, Kafka, production MLOps, Java, Go, C++
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -74,9 +72,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Data analysis, BI/reporting automation, data pipeline building, ML model development, LLM/AI agent development, cloud data engineering (GCP), data governance
+**Moderate:** Full-stack web development, manufacturing/operations analytics, insurance/fintech analytics, consulting
+**Entry-level:** Product management, ML infrastructure/MLOps at scale, deep learning research
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +89,13 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- San Francisco Bay Area (SF, San Jose, Oakland, Palo Alto, Mountain View, etc.): PASS (ideal)
+- Remote (US-based): PASS
+- Hybrid in Bay Area: PASS
+- Other major tech cities (Seattle, NYC, Austin, LA) if remote-first: PASS
+- Charlotte, NC only: FAIL (wants to leave)
+- Consulting with heavy travel: FAIL (deal-breaker)
+- Requires international relocation: FAIL
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +108,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Land a data analyst, data scientist, or AI engineer role at an established company or startup in the Bay Area
+- Use AI/LLM agent experience gained at NTT Data and personal projects in a role where it matters
+- Work somewhere he can actually contribute and build, not sit on a bench
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Building AI agents and LLM-powered tools, end-to-end data pipeline development, ML modeling, shipping products
+- Tasks that drain: Sitting idle (bench), constantly changing consulting projects, heavy travel, pure maintenance work
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently employed but on bench since January 2026; salary baseline $100k+ (lower acceptable for sports team roles)
+- **Flexibility**: Open to remote, hybrid, or in-person in Bay Area. Wants to relocate from Charlotte.
+- **Professional development**: Wants to grow AI/ML skills in a role with real project ownership
 
 ### 6. Salary Benchmark (Optional)
 

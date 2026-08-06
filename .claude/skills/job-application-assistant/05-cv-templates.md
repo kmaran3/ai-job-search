@@ -4,8 +4,6 @@ framework_version: 1.4.0
 
 # CV Templates and Tailoring Guide
 
-<!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
-
 ## Template: LaTeX moderncv (Banking Style)
 
 All CVs use the moderncv LaTeX package with the "banking" style and "blue" color scheme.
@@ -43,18 +41,18 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Krishna Maran - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.77]{geometry}
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\name{Krishna}{Maran}
+\address{Charlotte, NC}{}{}
+\phone[mobile]{678-777-1648}
+\email{krishnamaran12@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/krishna-maran}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
 
 \begin{document}
 \makecvtitle
@@ -102,7 +100,7 @@ Two related patterns are fine and should be kept:
 
 ### Section headings must match the CV's language (important)
 
-Section headings such as `\section{Core Competencies}`, `Professional Experience`, `Education`, `Languages`, `Publications`, `Honors and Awards`, `References` (and any others your template defines), plus the `Available upon request.` line under References, are all **literal English text baked into the template** - they do not translate themselves. Whenever the CV language (see `CV language` in the candidate profile) is not English, translate every one of these too, whatever they are, not just the body prose - a CV with a fully localized profile statement and bullets sitting under untouched English section headers reads as sloppy and inconsistent, and it's an easy thing to forget precisely because the prose translation is the obvious, visible part of the job. Worked example for Spanish: `Competencias Clave`, `Experiencia Profesional`, `Educaci\'on`, `Idiomas`, `Publicaciones`, `Distinciones y Premios`, `Referencias`, `Disponibles a solicitud.` The same rule applies for any other target language - check this explicitly during the verification pass.
+Section headings such as `\section{Core Competencies}`, `Professional Experience`, `Education`, `Languages`, `Publications`, `Honors and Awards`, `References` (and any others your template defines), plus the `Available upon request.` line under References, are all **literal English text baked into the template** - they do not translate themselves. Whenever the CV language (see `CV language` in the candidate profile) is not English, translate every one of these too, whatever they are, not just the body prose - a CV with a fully localized profile statement and bullets sitting under untouched English section headers reads as sloppy and inconsistent, and it's an easy thing to forget precisely because the prose translation is the obvious, visible part of the job. The same rule applies for any other target language - check this explicitly during the verification pass.
 
 ## Section-by-Section Tailoring
 
@@ -111,16 +109,18 @@ This is the most important section to customize. It appears right after `\makecv
 
 Write 5-7 lines that function as an "elevator pitch": a concise, compelling introduction explaining why you're qualified for *this specific role*. Focus on what the employer gains from hiring you.
 
-When the role sits outside your home domain, **lead with the domain-transfer argument** - the one or two sentences connecting your background to their problem (e.g. wave physics to radar signal processing) belong in the profile statement's opening, not buried in the cover letter. It is the strongest card a domain-changer holds; play it first.
+When the role sits outside your home domain, **lead with the domain-transfer argument** - the one or two sentences connecting your background to their problem belong in the profile statement's opening, not buried in the cover letter. It is the strongest card a domain-changer holds; play it first.
 
-**Create 2-3 profile statement templates for your main role types:**
+**Profile statement templates:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Data Scientist roles:**
+> Data scientist with an MS in Analytics (Computational Data Analytics) and BS in Industrial Engineering from Georgia Tech. Background in building production ML models, automated data pipelines, and LLM-powered tools across consulting, insurance, and manufacturing domains. Experienced in reducing forecasting error with neural networks, automating reporting with BigQuery and LookML, and deploying Snowflake Cortex search platforms. Brings strong statistical foundations in regression, classification, and experimental design with hands-on Python, SQL, and GCP expertise.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For AI Engineer roles:**
+> AI engineer with an MS in Analytics from Georgia Tech and hands-on experience building LLM-powered applications in production. Built a FastAPI + LangGraph agent for automated document classification, a Snowflake Cortex search platform across 60,000+ records, and a RAG pipeline with Claude API and ChromaDB. Combines ML modeling skills (XGBoost, neural networks) with full-stack development (Python, JavaScript/React, Node.js) and cloud infrastructure (GCP, Docker, Railway).
+
+**For Data Analyst roles:**
+> Data analyst with an MS in Analytics and BS in Industrial Engineering from Georgia Tech, specializing in building automated reporting systems and data pipelines. Cut weekly reporting time by 95% with GCS-to-BigQuery pipelines and LookML, reduced forecasting error by 35% with neural network models, and built production dbt data marts with 25+ automated quality tests. Strong in SQL, Python, Looker/LookML, Tableau, Power BI, and GCP.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
@@ -132,9 +132,10 @@ List **5-7 key competencies** in bullet format, tailored to the specific job. Fo
 Use the posting's own core term in the matching bullet's bold label when it truthfully applies - ATS and skim-reading hiring managers match literally, and "MLOps" in a heading outperforms a paraphrase like "ML Deployment".
 
 ### Education
-- Always include your highest degrees
+- Always include both Georgia Tech degrees (MS Analytics + BS Industrial Engineering)
 - For senior roles, keep education brief (dates and titles only)
 - Include thesis topics when relevant to the target role
+- Note Highest Honor for BS degree
 
 #### In-progress qualifications must say so explicitly
 
@@ -182,18 +183,17 @@ If there is a gap in your employment history:
 - Frame as deliberate skill-building and career repositioning
 
 ### Publications
-- Include Google Scholar link if applicable
-- Select 3-4 most relevant publications (not always all of them)
-- For non-academic roles, keep brief
+- Not applicable for Krishna's profile currently
+- If added later, include Google Scholar link if applicable
 
 ### Evidence Links
 Wherever the CV names a verifiable artifact - a public project, a hackathon entry, a publication - carry its link (`\href`) so a reader can verify the claim in one click. A CV whose strongest claims are checkable reads as more credible everywhere else too.
 
 ### Honors and Awards
 - Keep format brief, one line each
+- Eagle Scout
 
 ### References
-- List 2-4 references with name, title, company, and contact
 - End with: "More references are available upon request."
 - **Do not attach reference letters** - employers typically contact references directly
 
