@@ -22,7 +22,8 @@ Read in parallel:
 2. **`documents/applications/*/outcome.md`** — for each resolved application, read the outcome file to get the exact interview stages reached (the checkboxes) and any notes. Merge this into the matching tracker row by company+role fuzzy match (lowercase, ignore punctuation). If an archive exists for a row but there is no match, attach it as extra context anyway.
 
 Status normalisation — map tracker values to five canonical buckets before computing stats:
-- `applied` → **Active** (resume submitted, no further signal)
+- `shortlisted` → **Not Applied** (tracked/shortlisted but application not yet submitted)
+- `applied` → **Applied** (resume submitted, no further signal)
 - `interview` → **Interview**
 - `offer` → **Offer**
 - `hired` → **Hired**
@@ -72,7 +73,8 @@ Write a single self-contained HTML file. All CSS is inline in a `<style>` block.
 ### Design spec
 
 - **Colour palette:** CSS custom properties. Status colours:
-  - Active: `#3b82f6` (blue)
+  - Not Applied: `#94a3b8` (slate)
+  - Applied: `#3b82f6` (blue)
   - Interview: `#f59e0b` (amber)
   - Offer: `#8b5cf6` (purple)
   - Hired: `#22c55e` (green)
